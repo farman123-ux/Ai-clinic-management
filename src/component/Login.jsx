@@ -37,6 +37,9 @@ function Login() {
             })
         }
 
+        localStorage.setItem('isLoggedIn', 'true')
+        localStorage.setItem('userRole', role)
+
         form.reset()
 
         const routes = {
